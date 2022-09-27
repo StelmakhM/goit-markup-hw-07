@@ -90,7 +90,7 @@ button {
     border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
     align-items: center;
     display: flex;
 }
@@ -107,44 +107,27 @@ button {
     color: var(--logo-color);
 }
 
-.logo-span {
+.logo-blue {
     color: var(--hover-color)
 }
 
-.navigation-list {
+.navigation__list {
     list-style: none;
     display: flex;
 }
 
 
-.navigation-list li:not(:last-child) {
+.navigation__item:not(:last-child) {
     margin-right: 50px;
 }
 
 
-.navigation-link:focus,
-.navigation-link:hover {
+.navigation__link:focus,
+.navigation__link:hover {
     color: var(--hover-color);
 }
 
-
-.contacts-list {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
-
-}
-
-.contacts-list li {
-    display: flex;
-}
-
-.contacts-list li:not(:first-child) {
-    margin-left: 30px;
-}
-
-
-.navigation-link {
+.navigation__link {
     position: relative;
     display: block;
     line-height: 1.14;
@@ -156,22 +139,11 @@ button {
     transition: color var(--cubic) 250ms;
 }
 
-.contacts-link {
-    display: flex;
-    align-items: center;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--contacts-color);
-    transition: color var(--cubic) 250ms;
-}
-
-
-.active {
+.navigation__link--current {
     color: var(--hover-color);
 }
 
-.active::after {
+.navigation__link--current::after {
     position: absolute;
     display: block;
     content: "";
@@ -182,28 +154,50 @@ button {
     border-radius: 2px;
 }
 
-
-.icon {
-    display: block;
-
+.contacts {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
 }
 
-.icon-mail {
+.contacts__item {
+    display: flex;
+}
+
+.contacts__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--contacts-color);
+    transition: color var(--cubic) 250ms;
+}
+
+
+
+.contacts__icon {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts__icon--mail {
     width: 16px;
     height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
 }
 
-.icon-phone {
+.contacts__icon--phone {
     width: 10px;
     height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--hover-color);
 }
 
