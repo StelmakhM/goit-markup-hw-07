@@ -50,17 +50,7 @@ img {
     padding-bottom: 94px;
 }
 
-.hidden {
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
 
 
 /* Reset */
@@ -206,7 +196,11 @@ button {
 
 /* Hero */
 
-.overlay {
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--background-color);
+    text-align: center;
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -217,14 +211,8 @@ button {
     background-position: center;
 }
 
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: var(--background-color);
-    text-align: center;
-}
 
-.hero-title {
+.hero__title {
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -236,7 +224,7 @@ button {
     color: var(--accessory-color);
 }
 
-.hero-button {
+.hero__button {
     padding: 10px 32px;
 
     font-family: 'Roboto';
@@ -254,44 +242,45 @@ button {
     transition: background-color var(--cubic) 250ms;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
     background-color: var(--buttons-hover-color);
 }
 
 /* Features */
 
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
-.features-list {
+.features__title--hidden {
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.features__list {
     list-style: none;
     display: flex;
 }
 
-.features-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.features-item {
+.features__item {
     width: calc((100%-90px)/4);
 }
 
-.features-subtitle {
-    margin-bottom: 10px;
-
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.features__item:not(:last-child) {
+    margin-right: 30px;
 }
 
-.features-text {
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--contacts-color);
-}
 
-.features-icon {
+.features__iconwrap {
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -302,10 +291,28 @@ button {
     background-color: var(--icon-background);
 }
 
-.icon-feature {
+.features__icon {
+    display: block;
     width: 70px;
     height: 70px;
 }
+
+.features__subtitle {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features__text {
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-color);
+}
+
 
 
 /* About  */
