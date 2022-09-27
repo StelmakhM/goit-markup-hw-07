@@ -19,27 +19,28 @@
 
     <!-- Header -->
 
-    <header class="page-header">
-        <div class="container header-container">
-            <a class="logo" href="#"><span class="logo-span">Web</span>Studio</a>
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo" href="#"><span class="header__logo--blue">Web</span>Studio</a>
             <nav class="navigation">
-                <ul class="navigation-list">
-                    <li> <a href="./index.html" class="navigation-link">Студія</a></li>
-                    <li><a href="./portfolio.html" class="navigation-link active">Портфоліо</a></li>
-                    <li><a href="#" class="navigation-link">Контакти</a></li>
+                <ul class="navigation__list">
+                    <li class="navigation__item"> <a href="./index.html"
+                            class="navigation__link navigation__link--current ">Студія</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="contacts-list">
-                <li>
-                    <a class="contacts-link" href="mailto:info@devstudio.com">
-                        <svg class="icon icon-mail">
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon contacts__icon--mail">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li>
-                    <a class="contacts-link" href="tel:+380961111111">
-                        <svg class="icon icon-phone">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon contacts__icon--phone">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -50,168 +51,180 @@
     <!-- Main -->
 
     <main>
-        <section class="section">
+        <section class="products">
             <div class="container">
-                <h1 class="hidden">Проєкти</h1>
+                <h1 class="products__title--hidden">Проєкти</h1>
                 <ul class="filter-list">
-                    <li><button class="filter-button" type="button">Усі</button></li>
-                    <li><button class="filter-button" type="button">Веб-сайти</button></li>
-                    <li><button class="filter-button" type="button">Додатки</button></li>
-                    <li><button class="filter-button" type="button">Дизайн</button></li>
-                    <li><button class="filter-button" type="button">Маркетинг</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Усі</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Додатки</button>
+                    </li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Дизайн</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Маркетинг</button>
+                    </li>
                 </ul>
-                <ul class="product-list">
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                <ul class="products__list">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project1.jpg" alt="Веб-сайт" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
 
-                            <div class="product-container">
-                                <h2 class="product-title">Технокряк</h2>
-                                <p class="product-text">Веб-сайт</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Технокряк</h2>
+                                <p class="products__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project2.jpg" alt="Постер баскетбольної гри" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="product-text">Дизайн</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Постер New Orlean vs Golden Star</h2>
+                                <p class="products__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project3.jpg" alt="Постер рибного ресторану" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Ресторан Seafood</h2>
-                                <p class="product-text">Додаток</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Ресторан Seafood</h2>
+                                <p class="products__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project4.jpg" alt="Повнорозмірні навушники" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Проєкт Prime</h2>
-                                <p class="product-text">Маркетинг</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Проєкт Prime</h2>
+                                <p class="products__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project5.jpg" alt="Дві красиві коробки" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Проєкт Boxes</h2>
-                                <p class="product-text">Додаток</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Проєкт Boxes</h2>
+                                <p class="products__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project6.jpg" alt="Веб-сайт" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Inspiration has no Borders</h2>
-                                <p class="product-text">Веб-сайт</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Inspiration has no Borders</h2>
+                                <p class="products__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project7.jpg" alt="Глянцевий журнал" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Видання Limited Edition</h2>
-                                <p class="product-text">Дизайн</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Видання Limited Edition</h2>
+                                <p class="products__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project8.jpg" alt="Красива бірка" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Проєкт LAB</h2>
-                                <p class="product-text">Маркетинг</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Проєкт LAB</h2>
+                                <p class="products__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="product-item">
-                        <a class="product-link" href="#">
-                            <div class="product-thumb">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <div class="products__thumb">
                                 <img src="./images/project9.jpg" alt="Людина працює за ноутбуком" width="370">
-                                <div class="product-overlay">
-                                    <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                <div class="products__overlay">
+                                    <p class="products__info">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів.
                                         Все це
                                         дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="product-container">
-                                <h2 class="product-title">Growing Business</h2>
-                                <p class="product-text">Додаток</p>
+                            <div class="products__container">
+                                <h2 class="products__subtitle">Growing Business</h2>
+                                <p class="products__text">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -222,63 +235,66 @@
 
     <!-- Footer -->
 
-    <footer class="page-footer">
-        <div class="container footer-container">
-            <div><a class="footer-logo" href="#"><span class="logo-span">Web</span>Studio</a>
-                <address>
-                    <ul class="footer-list">
-                        <li><a class="footer-location" href="https://goo.gl/maps/iSP6fUKGi2yoj21T9" target="_blank"
-                                rel="noopener noreferrer">м. Київ,
+    <footer class="footer">
+        <div class="container footer__container">
+            <div><a class="footer__logo" href="#"><span class="footer__logo--blue">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item"><a class="address__link address__link--white"
+                                href="https://goo.gl/maps/iSP6fUKGi2yoj21T9" target="_blank"
+                                rel="noopener noreferrer">м.
+                                Київ,
                                 пр-т Лесі Українки,
                                 26</a></li>
-                        <li><a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="address__item"><a class="address__link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11
+                                11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-social">
-                <p class="footer-social-title">приєднуйтесь</p>
-                <ul class="footer-social-list">
-                    <li>
-                        <a class="footer-social-link" href="#">
-                            <svg class="footer-icon-social">
+            <div class="footer-socials">
+                <p class="footer-socials__title">приєднуйтесь</p>
+                <ul class="footer-socials__list">
+                    <li class="footer-socials__item">
+                        <a class="footer-socials__link" href="#">
+                            <svg class="footer-socials__icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="footer-social-link" href="#">
-                            <svg class="footer-icon-social">
+                    <li class="footer-socials__item">
+                        <a class="footer-socials__link" href="#">
+                            <svg class="footer-socials__icon">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="footer-social-link" href="#">
-                            <svg class="footer-icon-social">
+                    <li class="footer-socials__item">
+                        <a class="footer-socials__link" href="#">
+                            <svg class="footer-socials__icon">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="footer-social-link" href="#">
-                            <svg class="footer-icon-social">
+                    <li class="footer-socials__item">
+                        <a class="footer-socials__link" href="#">
+                            <svg class="footer-socials__icon">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="subscribe">
-                <p class="subscribe-title">Підпишіться на розсилку</p>
-                <div class="subscribe-field">
-                    <form>
-                        <label>
-                            <input class="subscribe-input" type="email" name="usermail" placeholder="E-mail">
-                        </label>
-                        <button class="subscribe-button" type="submit"><strong>Підписатися</strong></button>
-                    </form>
-                </div>
+            <div class="footer-subscribe">
+                <p class="footer-subscribe__title">Підпишіться на розсилку</p>
+                <form>
+                    <label>
+                        <input class="footer-subscribe__input" type="email" name="usermail" placeholder="E-mail">
+                    </label>
+                    <button class="footer-subscribe__button" type="submit"><strong
+                            class="footer-subscribe__subtitle">Підписатися</strong></button>
+                </form>
             </div>
         </div>
     </footer>
