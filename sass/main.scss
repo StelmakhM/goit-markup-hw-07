@@ -1,6 +1,6 @@
-@import './utilits/vars';
-@import './utilits/reset';
-@import './utilits/common';
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/common';
 @import './components/header';
 @import './components/hero';
 @import './components/features';
@@ -9,3 +9,5 @@
 @import './components/clients';
 @import './components/footer';
 @import './components/modal';
+@import './components/filter';
+@import './components/products';
