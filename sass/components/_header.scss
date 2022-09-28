@@ -81,7 +81,7 @@
         display: flex;
     }
 
-    &__item:not(:last-child) {
+    &__item:not(:first-child) {
         margin-left: 30px;
     }
 
