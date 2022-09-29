@@ -55,11 +55,12 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
         cursor: pointer;
-    }
 
-    &__button-close:focus,
-    &__button-close:hover {
-        color: $hover-color;
+        &:focus,
+        &:hover {
+            color: $hover-color;
+        }
+
     }
 
 
@@ -111,15 +112,15 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border-color $cubic 250ms;
-    }
 
-    &__input:focus {
-        border-color: $hover-color;
-        outline: none;
-    }
+        &:focus {
+            border-color: $hover-color;
+            outline: none;
+        }
 
-    &__input:focus~&__icon {
-        fill: $hover-color;
+        &:focus~&__icon {
+            fill: $hover-color;
+        }
     }
 
     &__icon {
@@ -147,21 +148,22 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border-color $cubic 250ms;
+
+        &:focus {
+            border-color: $hover-color;
+            outline: none;
+        }
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: calc(14 / 12);
+            letter-spacing: 0.01em;
+
+            color: rgba(117, 117, 117, 0.5);
+        }
     }
 
-    &__textarea:focus {
-        border-color: $hover-color;
-        outline: none;
-    }
-
-    &__textarea::placeholder {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: calc(14 / 12);
-        letter-spacing: 0.01em;
-
-        color: rgba(117, 117, 117, 0.5);
-    }
 
     &__confirm {
         position: relative;
@@ -176,24 +178,25 @@
 
         color: $contacts-color;
         cursor: pointer;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+
+            display: block;
+            width: 16px;
+            height: 15px;
+
+            background-image: url(../images/uncheckboxed.svg);
+            background-size: contain;
+            transition: background-image $cubic 250ms;
+        }
     }
 
-    &__confirm::before {
-        content: '';
-
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        transform: translateY(-50%);
-
-        display: block;
-        width: 16px;
-        height: 15px;
-
-        background-image: url(../images/uncheckboxed.svg);
-        background-size: contain;
-        transition: background-image $cubic 250ms;
-    }
 
     &__link {
         color: $hover-color;
@@ -221,12 +224,13 @@
         color: $accessory-color;
         transition: box-shadow var(--cubic) 250ms, background-color var(--cubic) 250ms;
         cursor: pointer;
-    }
 
-    &__button-submit:focus,
-    &__button-submit:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        background-color: $buttons-hover-color;
+
+        &:focus,
+        &:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $buttons-hover-color;
+        }
     }
 
 }

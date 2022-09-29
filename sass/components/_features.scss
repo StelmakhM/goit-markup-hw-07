@@ -9,11 +9,12 @@
 
     &__item {
         width: calc((100% - 90px) / 4);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
 
     &__iconwrap {
         display: flex;

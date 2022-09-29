@@ -344,34 +344,6 @@ img {
   background-color: #2196F3;
 }
 
-.socials {
-  display: flex;
-  justify-content: center;
-}
-.socials__item:not(:last-child) {
-  margin-right: 10px;
-}
-.socials__icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-.socials__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #AFB1B8;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-.socials__link:focus, .socials__link:hover {
-  color: #FFFFFF;
-  background-color: #2196F3;
-}
-
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -654,7 +626,7 @@ img {
   border-color: #2196F3;
   outline: none;
 }
-.modal__input:focus ~ .modal__icon {
+.modal__input:focus ~ .modal__input__icon {
   fill: #2196F3;
 }
 .modal__icon {

@@ -34,12 +34,14 @@
         border-radius: 4px;
         color: $social-media-color;
         transition: color $cubic 250ms, border-color $cubic 250ms;
-    }
 
-    &__link:focus,
-    &__link:hover {
-        color: $hover-color;
-        border: 1px solid $hover-color;
+        &:focus,
+        &:hover {
+            color: $hover-color;
+            border: 1px solid $hover-color;
+        }
+
+
     }
 
     &__icon {

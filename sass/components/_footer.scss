@@ -29,10 +29,11 @@
 }
 
 .address {
-    &__item:not(:last-child) {
-        margin-bottom: 9px;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
     }
-
 
     &__link {
         font-style: normal;
@@ -43,11 +44,12 @@
 
         color: $adress-color;
         transition: color $cubic 250ms;
-    }
 
-    &__link:focus,
-    &__link:hover {
-        color: $hover-color;
+        &:focus,
+        &:hover {
+            color: $hover-color;
+        }
+
     }
 
     &__link--white {
@@ -91,12 +93,13 @@
         background-color: $footer-social-color;
         color: $accessory-color;
         transition: background-color $cubic 250ms;
+
+        &:focus,
+        &:hover {
+            background-color: $hover-color;
+        }
     }
 
-    &__link:focus,
-    &__link:hover {
-        background-color: $hover-color;
-    }
 
     &__icon {
         width: 20px;
@@ -135,16 +138,17 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: $background-color;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: $form-input-color;
+
+        }
     }
 
-    &__input::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        color: $form-input-color;
-
-    }
 
     &__button {
         display: inline-flex;
@@ -157,12 +161,13 @@
         border: transparent;
         cursor: pointer;
         transition: background-color $cubic 250ms;
+
+        &:focus,
+        &:hover {
+            background-color: $buttons-hover-color;
+        }
     }
 
-    &__button:focus,
-    &__button:hover {
-        background-color: $buttons-hover-color;
-    }
 
     &__subtitle {
         position: relative;
@@ -173,20 +178,21 @@
         letter-spacing: 0.06em;
 
         color: $accessory-color;
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 10px);
+            transform: translateY(-50%);
+
+            display: block;
+            width: 24px;
+            height: 24px;
+
+            background-image: url(../images/send.svg);
+        }
     }
 
-    &__subtitle::after {
-        content: '';
-
-        position: absolute;
-        top: 50%;
-        left: calc(100% + 10px);
-        transform: translateY(-50%);
-
-        display: block;
-        width: 24px;
-        height: 24px;
-
-        background-image: url(../images/send.svg);
-    }
 }
