@@ -13,10 +13,10 @@
         text-align: center;
         letter-spacing: 0.03em;
     }
-}
 
-.member {
-    display: flex;
+    &__list {
+        display: flex;
+    }
 
     &__item {
         text-align: center;
@@ -57,6 +57,41 @@
     }
 }
 
+
+.socials {
+    display: flex;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+
+        fill: currentColor;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+
+        border-radius: 50%;
+        color: $social-media-color;
+        transition: color $cubic 250ms;
+        transition: background-color $cubic 250ms;
+    }
+
+    &__link:focus,
+    &__link:hover {
+        color: $accessory-color;
+        background-color: $hover-color;
+    }
+}
 
 .socials {
     display: flex;
